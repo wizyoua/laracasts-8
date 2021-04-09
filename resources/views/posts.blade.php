@@ -8,20 +8,11 @@
     <link rel="stylesheet" href="/app.css">
 </head>
 <body>
+    @foreach ($posts as $post)
     <article>
-        <h1> <a href="/posts/my-first-post"> my first post</a></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ab. Saepe veritatis ullam sapiente rem quas necessitatibus illo nulla aspernatur expedita maiores. Soluta molestias ullam repellat neque, qui consequuntur in?</p>
+        <?= $post; ?>
     </article>
-
-    <article>
-        <h1><a href="/posts/my-second-post">my second post</a></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ab. Saepe veritatis ullam sapiente rem quas necessitatibus illo nulla aspernatur expedita maiores. Soluta molestias ullam repellat neque, qui consequuntur in?</p>
-    </article>
-
-    <article>
-        <h1><a href="/posts/my-third-post">my third post</a></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ab. Saepe veritatis ullam sapiente rem quas necessitatibus illo nulla aspernatur expedita maiores. Soluta molestias ullam repellat neque, qui consequuntur in?</p>
-    </article>
+    @endforeach
     
 </body>
 </html>
